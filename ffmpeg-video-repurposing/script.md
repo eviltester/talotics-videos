@@ -1,0 +1,73 @@
+# Repurposing YouTube content for Linkedin and Instagram
+
+
+
+I want to promote my YouTube videos on Linkedin, and Instagram, so I want to create smaller excerpts of my YouTube videos.
+
+Short videos work really well on Instagram, and Linkedin, when people are scrolling through their feed.
+
+On mobile devices videos in the feed auto play. And if you have a video with a talking head, people will see the talking head, but they won't hear the audio.
+
+We can use hard captions, "burned in" to the video to avoid that problem.
+
+I use ffmpeg to help with this.
+
+`ffmpeg` is free software that you can download from `https://www.ffmpeg.org/`.
+
+`ffmpeg` can be quite complicated because it runs from the command line.
+
+Let me walk you through the workflow I use for taking a YouTube video, with subtitles, and converting it into smaller videos with burned in subtitles.
+
+Here's a video on YouTube. It's only four minutes, but I can easily get three or four short videos out of this, that I can use to promote on Linkedin and Instagram.
+
+First I want to download the mp4 file.
+
+And I want to download the subtitle file as a `.srt` file.
+
+I'll use ffmpeg to generate a `.ass` subtitle file so I can burn it on to the video.
+
+~~~~~~~~
+ffmpeg -i captions.srt captions.ass
+~~~~~~~~
+
+And I'll burn it on to the video like this:
+
+~~~~~~~~
+ffmpeg -i video.mp4  -vf "subtitles=captions.ass:force_style='OutlineColour=&H80000000,BorderStyle=4,Outline=1,Shadow=0,MarginV=20'" subtitled-video.mp4
+~~~~~~~~
+ 
+I also want to create a video resized for Instagram, I can use `ffmpeg` to do that as well.
+
+~~~~~~~~
+ffmpeg -i video.mp4 -vf scale=720:720:force_original_aspect_ratio=decrease,pad=720:720 instagram-sized.mp4
+~~~~~~~~
+
+I can burn the subtitles on to this video too.
+
+~~~~~~~~
+ffmpeg -i instaoutout.mp4 -vf "subtitles=captions.ass:force_style='OutlineColour=&H80000000,BorderStyle=4,Outline=1,Shadow=0,MarginV=90'" instagram-subs.mp4
+~~~~~~~~
+
+I want to create 3 new videos from my original, and I've watched the video so I know I want sections from:
+
+• from 01:05 for 52 seconds
+• from 02:00 for 33 seconds
+• from 03:10 for 51 seconds
+
+I can use ffmpeg to create those sections.
+
+~~~~~~~~
+ffmpeg -i instagram-subs.mp4 -ss 00:01:05 -t 00:00:52 instagram-01-05.mp4
+~~~~~~~~
+
+That was for instagram, now I'll create one for linkedin.
+
+~~~~~~~~
+ffmpeg -i subtitled-video.mp4 -ss 00:01:05 -t 00:00:52 subtitled-01-05.mp4
+~~~~~~~~
+
+If I repeat that for each of the segments, I'll have three videos that I can upload to Linkedin and 3 that I can upload to Instagram. All will have subtitles visible on the screen.
+
+And I didn't have to do any more editing of the video after my YouTube work.
+
+It seems complicated, but if all you learned how to do was copy and paste the commands and replace the filenames with the files your working with, and the timings that you want to use as excerpts, you could be repurposing your YouTube content on Linkedin, Instagram and other social networks. easily.

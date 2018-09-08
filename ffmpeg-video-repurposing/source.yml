@@ -1,0 +1,35 @@
+size: 720p
+resourceDir: resources
+scenes:
+  - slide: |
+      # Repurposing YouTube videos
+      
+      * create smaller excerpts
+      * link them to YouTube
+
+    narration: I want to promote my YouTube videos on Linkedin, and Instagram, so I want to create smaller excerpts of my YouTube videos.
+  
+  - slide: |
+      # Short Videos for Feed Viewing
+
+      * Linkedin
+      * Instagram
+
+    narration: Short videos work really well on Instagram, and Linkedin, when people are scrolling through their feed.
+  - slide: |
+      # Videos Auto Play On Mobile
+
+      * Audio is off by default
+      * Talking head videos look silly
+
+    narration: On mobile devices videos in the feed auto play. And if you have a video with a talking head, people will see the talking head, but they won't hear the audio.    
+  - slide: |
+      # Options CC or Burned In
+
+      * Linkedin supports closed captions
+      * Instagram needs hard captions
+
+    narration: I could upload a subtitle file to Linkedin, but I'd have to edit that for the excerpt.
+    narration: Or I can use hard captions, "burned in" to the video to avoid that problem.
+
+
