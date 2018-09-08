@@ -4,12 +4,11 @@ I want to promote my YouTube videos on Linkedin, and Instagram. To do that I wan
 
 Short videos work really well on Instagram, and Linkedin, when people are scrolling through their feed.
 
-On mobile devices videos in the feed auto play. And if you have a video with a talking head, people will see the talking head, but they won't hear the audio.
+On mobile devices videos in the feed auto play. And if you have a video with a talking head, people will see the talking head, but they won't hear the audio. And that just looks silly.
 
-I could upload a subtitle file to Linkedin, but I'd have to edit that for the excerpt.
-Or I can use hard captions, "burned in" to the video to avoid that problem.
+I could upload a subtitle file to Linkedin, but I'd have to edit that for the excerpt. Or, I can use hard captions, "burned in", to the video to avoid that problem.
 
-I use ffmpeg to help with this.
+I use ffmpeg, free command line software, to help with this.
 
 `ffmpeg` is free software that you can download from `https://www.ffmpeg.org/`.
 
@@ -47,11 +46,13 @@ I can burn the subtitles on to this video too.
 ffmpeg -i instaoutout.mp4 -vf "subtitles=captions.ass:force_style='OutlineColour=&H80000000,BorderStyle=4,Outline=1,Shadow=0,MarginV=90'" instagram-subs.mp4
 ~~~~~~~~
 
-I want to create 3 new videos from my original, and I've watched the video so I know I want sections from:
+I want to create 3 new videos from my original, I want to create 3 new videos from my original, and I've watched the video so I know I want sections from a point in the video for a specific length of time in seconds.
 
-• from 01:05 for 52 seconds
-• from 02:00 for 33 seconds
-• from 03:10 for 51 seconds
+I've watched the video so I know I want sections from:
+
+* from 01:05 for 52 seconds
+* from 02:00 for 33 seconds
+* from 03:10 for 51 seconds
 
 I can use ffmpeg to create those sections.
 
@@ -65,8 +66,13 @@ That was for instagram, now I'll create one for linkedin.
 ffmpeg -i subtitled-video.mp4 -ss 00:01:05 -t 00:00:52 subtitled-01-05.mp4
 ~~~~~~~~
 
-If I repeat that for each of the segments, I'll have three videos that I can upload to Linkedin and 3 that I can upload to Instagram. All will have subtitles visible on the screen.
+If I repeat that for each of the segments, I'll have three videos that I can upload to Linkedin, and three that I can upload to Instagram. All will have subtitles visible on the screen.
 
 And I didn't have to do any more editing of the video after my YouTube work.
 
-It seems complicated, but if all you learned how to do was copy and paste the commands and replace the filenames with the files your working with, and the timings that you want to use as excerpts, you could be repurposing your YouTube content on Linkedin, Instagram and other social networks. easily.
+It seems complicated, but if all you learned how to do was copy and paste the commands and replace the filenames with the files you're working with, and the timings that you want to use as excerpts. You could be repurposing your YouTube content on Linkedin, Instagram and other social networks. Easily. Using Free software and without having to do any more edits to the YouTube video or subtitles.
+
+For more Digital Marketing Tactics, Tips and tricks. Visit www.talotics.com
+
+
+
