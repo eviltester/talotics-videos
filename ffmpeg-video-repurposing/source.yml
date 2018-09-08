@@ -47,7 +47,7 @@ scenes:
         * multi-platform: Windows, Mac, Linux, etc.
         * https://www.ffmpeg.org
 
-  - narration: Let me walk you through the workflow I use for taking a YouTube video, with subtitles, and converting it into smaller videos with burned in subtitles.
+  - narration: Let me walk you through the workflow I use for taking a YouTube video, with subtitles, and converting it into smaller videos with the subtitles burned in.
     slide: |
        # YouTube to Instagram Workflow
 
@@ -66,19 +66,22 @@ scenes:
       top: 265
       right: 700
       bottom: 385
-  - narration: First I want to download the mp4 file. And I want to download the subtitle file as a `.srt` file.
+  - narration: First I want to download the mp4 file. And I want to download the subtitle file as a srt file.
     slide: |
-      # Show download mp4, and download subtitles
+      # Download
+
+      * download mp4 from the video list
+      * download subtitles from the video edit screen
 
   - narration: I'll use ffmpeg to generate a different format of subtitle file so I can burn it on to the video.
     slide: |
-      # FFMPEG Command to create `.ass` file
+      # FFMPEG Command to create a `.ass` file
 
       ~~~~~~~~
       ffmpeg -i captions.srt captions.ass
       ~~~~~~~~
 
-  - narration: And I'll burn it on to the video like this. You might want to copy and paste from the video description. When you type it in, it all goes on one line.
+  - narration: I burn the subtitles on to the video like this. You might want to copy and paste from the video description. When you type it in, it all goes on one line.
     slide: |
       # FFMPEG Command to burn in subtitles
 
@@ -90,7 +93,7 @@ scenes:
        subtitled-video.mp4
       ~~~~~~~~
 
-  - narration: Now I have a video with subtitles burned in.
+  - narration: Now I have a video with subtitles burned in, perfect for uploading to Linkedin or Twitter.
     image: youtube-linkedin-insta.png
     callout:
       type: rectangle
@@ -99,7 +102,7 @@ scenes:
       right: 1195
       bottom: 312
 
-  - narration: I also want to create a video resized for Instagram. I can use the scale filter from `ffmpeg` to do that.
+  - narration: I also want to create a video sized for Instagram. I can use the scale filter from ffmpeg to do that.
     slide: |
       # FFMPEG `scale` to format for Instagram
 
@@ -122,7 +125,7 @@ scenes:
        instagram-subs.mp4
       ~~~~~~~~
 
-  - narration: Now I have a video perfect for uploading to Instagram.
+  - narration: Now I have a video which is perfect for uploading to Instagram.
     image: youtube-linkedin-insta.png
     callout:
       type: rectangle
@@ -140,15 +143,13 @@ scenes:
       * from 02:00 for 33 seconds
       * from 03:10 for 51 seconds
 
-      e.g.
-
       ~~~~~~~~
       ffmpeg -i instagram-subs.mp4 
       -ss 00:01:05 -t 00:00:52 instagram-01-05.mp4
       ~~~~~~~~
 
   - narration: That was for instagram, now I'll create one for linkedin. The only difference is the input file.
-      If I repeat that for each of the segments, I'll have three videos that I can upload to Linkedin, and three that I can upload to Instagram. All will have subtitles visible on the screen.
+      If I repeat this for each of the segments, I'll have three videos that I can upload to Linkedin, and three that I can upload to Instagram. All will have subtitles visible on the screen.
     slide: |
 
       # Use FFMPEG to create those sections for Landscape Videos
@@ -158,7 +159,7 @@ scenes:
       -ss 00:01:05 -t 00:00:52 subtitled-01-05.mp4
       ~~~~~~~~
 
-  - narration: It seems complicated, but if all you learned how to do was copy and paste the commands and replace the filenames with the files you're working with, and the timings that you want to use as excerpts. You could be repurposing your YouTube content on Linkedin, Instagram and other social networks. Easily. Using Free software and without having to do any more edits to the YouTube video or subtitles.
+  - narration: It seems complicated, but if you copy and paste the commands and replace the filenames with the files you're working with, then edit the timings for your sections, you could easily be repurposing your YouTube content on Linkedin, Instagram and other social networks. Using Free software and without having to do any more edits to the YouTube video or subtitles.
     image: youtube-linkedin-insta.png
     slide: |
 
