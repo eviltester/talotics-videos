@@ -101,40 +101,40 @@ scenes:
   - narration: I want to create 3 new videos from my original, and I've watched the video so I know I want sections from a point in the video for a specific length of time in seconds.
     slide: |
 
-    # Use FFMPEG to create those sections for Instagram
+      # Use FFMPEG to create those sections for Instagram
 
-    * from 01:05 for 52 seconds
-    * from 02:00 for 33 seconds
-    * from 03:10 for 51 seconds
+      * from 01:05 for 52 seconds
+      * from 02:00 for 33 seconds
+      * from 03:10 for 51 seconds
 
-    e.g.
+      e.g.
 
-    ~~~~~~~~
-    ffmpeg -i instagram-subs.mp4 -ss 00:01:05 -t 00:00:52 instagram-01-05.mp4
-    ~~~~~~~~
+      ~~~~~~~~
+      ffmpeg -i instagram-subs.mp4 -ss 00:01:05 -t 00:00:52 instagram-01-05.mp4
+      ~~~~~~~~
 
   - narration: That was for instagram, now I'll create one for linkedin. The only difference is the input file.
       If I repeat that for each of the segments, I'll have three videos that I can upload to Linkedin, and three that I can upload to Instagram. All will have subtitles visible on the screen.
     slide: |
 
-    # Use FFMPEG to create those sections for Landscape Videos
+      # Use FFMPEG to create those sections for Landscape Videos
 
-    ~~~~~~~~
-    ffmpeg -i subtitled-video.mp4 -ss 00:01:05 -t 00:00:52 subtitled-01-05.mp4
-    ~~~~~~~~
+      ~~~~~~~~
+      ffmpeg -i subtitled-video.mp4 -ss 00:01:05 -t 00:00:52 subtitled-01-05.mp4
+      ~~~~~~~~
 
   - narration: It seems complicated, but if all you learned how to do was copy and paste the commands and replace the filenames with the files you're working with, and the timings that you want to use as excerpts. You could be repurposing your YouTube content on Linkedin, Instagram and other social networks. Easily. Using Free software and without having to do any more edits to the YouTube video or subtitles.
     slide: |
 
-    # Benefits
+      # Benefits
 
-    * Free Software
-    * Copy and Paste the commands
-    * No need to edit the videos
-    * No further need to edit the subtitles
-    * Repurposed content means more value from your work
+      * Free Software
+      * Copy and Paste the commands
+      * No need to edit the videos
+      * No further need to edit the subtitles
+      * Repurposed content means more value from your work
 
   - narration: For more Digital Marketing Tactics, Tips and tricks. Visit www.talotics.com
 slide: |
 
-    # Visit www.talotics.com
+      # Visit www.talotics.com
