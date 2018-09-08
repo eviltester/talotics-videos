@@ -1,14 +1,13 @@
 # Repurposing YouTube content for Linkedin and Instagram
 
-
-
-I want to promote my YouTube videos on Linkedin, and Instagram, so I want to create smaller excerpts of my YouTube videos.
+I want to promote my YouTube videos on Linkedin, and Instagram. To do that I want to create smaller excerpts of my YouTube videos and have these promote the main video on YouTube.
 
 Short videos work really well on Instagram, and Linkedin, when people are scrolling through their feed.
 
 On mobile devices videos in the feed auto play. And if you have a video with a talking head, people will see the talking head, but they won't hear the audio.
 
-We can use hard captions, "burned in" to the video to avoid that problem.
+I could upload a subtitle file to Linkedin, but I'd have to edit that for the excerpt.
+Or I can use hard captions, "burned in" to the video to avoid that problem.
 
 I use ffmpeg to help with this.
 
