@@ -23,7 +23,7 @@ scenes:
 
   - narration: I could upload a subtitle file to Linkedin, but I would have to edit that for the excerpt. Or, I can use hard captions, "burned in", to the video to avoid that problem.
     slide: |
-      # Options: CC or Burned In
+      # Options - CC or Burned In
 
       * Linkedin supports Closed Captions
       * Instagram needs Burned In Hard Captions
