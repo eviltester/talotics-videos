@@ -4,25 +4,24 @@ I want to promote my YouTube videos on Linkedin, and Instagram. To do that I wan
 
 Short videos work really well on Instagram, and Linkedin, when people are scrolling through their feed.
 
-On mobile devices videos in the feed auto play. And if you have a video with a talking head, people will see the talking head, but they won't hear the audio. And that just looks silly.
+On mobile devices, videos auto play when shown in the feed. And if you have a video with a talking head, people will see the talking head, but they won't hear the audio. And that just looks silly.
 
 I could upload a subtitle file to Linkedin, but I'd have to edit that for the excerpt. Or, I can use hard captions, "burned in", to the video to avoid that problem.
 
-I use ffmpeg, free command line software, to help with this.
+I use ffmpeg to help with this. The software is free and runs from the command line. Although that can make it seem quite complicated.
 
-`ffmpeg` is free software that you can download from `https://www.ffmpeg.org/`.
+`ffmpeg` is multi-platform free software that you can download from `https://www.ffmpeg.org/`.
 
-`ffmpeg` can be quite complicated because it runs from the command line.
 
 Let me walk you through the workflow I use for taking a YouTube video, with subtitles, and converting it into smaller videos with burned in subtitles.
 
-Here's a video on YouTube. It's only four minutes, but I can easily get three or four short videos out of this, that I can use to promote on Linkedin and Instagram.
+Here's a video on YouTube. It's only four minutes, but I can easily get three or four short videos out of this. I can use those to promote on Linkedin and Instagram.
 
 First I want to download the mp4 file.
 
 And I want to download the subtitle file as a `.srt` file.
 
-I'll use ffmpeg to generate a `.ass` subtitle file so I can burn it on to the video.
+I'll use ffmpeg to generate a different format of subtitle file so I can burn it on to the video.
 
 ~~~~~~~~
 ffmpeg -i captions.srt captions.ass
@@ -34,19 +33,19 @@ And I'll burn it on to the video like this:
 ffmpeg -i video.mp4  -vf "subtitles=captions.ass:force_style='OutlineColour=&H80000000,BorderStyle=4,Outline=1,Shadow=0,MarginV=20'" subtitled-video.mp4
 ~~~~~~~~
  
-I also want to create a video resized for Instagram, I can use `ffmpeg` to do that as well.
+I also want to create a video resized for Instagram. I can use the scale filter from `ffmpeg` to do that.
 
 ~~~~~~~~
 ffmpeg -i video.mp4 -vf scale=720:720:force_original_aspect_ratio=decrease,pad=720:720 instagram-sized.mp4
 ~~~~~~~~
 
-I can burn the subtitles on to this video too.
+I can burn in the subtitles for this video as well.
 
 ~~~~~~~~
 ffmpeg -i instaoutout.mp4 -vf "subtitles=captions.ass:force_style='OutlineColour=&H80000000,BorderStyle=4,Outline=1,Shadow=0,MarginV=90'" instagram-subs.mp4
 ~~~~~~~~
 
-I want to create 3 new videos from my original, I want to create 3 new videos from my original, and I've watched the video so I know I want sections from a point in the video for a specific length of time in seconds.
+I want to create 3 new videos from my original. I watch the video to identify which sections I want. Each section starts from a point in the video and lasts for a specific length of time in seconds.
 
 I've watched the video so I know I want sections from:
 
