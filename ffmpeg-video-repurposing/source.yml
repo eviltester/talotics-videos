@@ -1,15 +1,16 @@
 size: 720p
 resourceDir: resources
 scenes:
-  - narration: I want to promote my YouTube videos on Linkedin, and Instagram. To do that I want to create smaller excerpts of my YouTube videos and have these promote the main video on YouTube. 
+  - narration: To re-promote my YouTube videos on Linkedin, Twitter and Instagram. I want to create smaller excerpts of my YouTube videos and have these send traffic to the main video on YouTube.
     image: youtube-linkedin-insta.png
-    slide: |
-      # Repurposing YouTube videos
-      
-      * create smaller excerpts
-      * link them to YouTube
+    slide: Repurpose YouTube videos for re-promotion
+#    slide: |
+#      # Repurposing YouTube videos
+#      
+#      * create smaller excerpts
+#      * link them to YouTube
 
-  - narration: Short videos work really well on Instagram, and Linkedin, when people are scrolling through their feed.
+  - narration: Short videos work well on Instagram, and Linkedin, when people scroll through their feed.
     image: youtube-linkedin-insta.png
     callout:
       type: rectangle
@@ -24,7 +25,10 @@ scenes:
 #      * Linkedin
 #      * Instagram
 
-  - narration: On mobile devices, videos auto play when shown in the feed. And if you have a video with a talking head, people will see the talking head, but they won't hear the audio. And that just looks silly.
+  - narration: On mobile devices, videos auto play when shown in the feed.
+    slide: Videos Auto Play On Mobile
+
+  - narration: But if you have a video with a talking head, people will see the talking head, but they won't hear the audio. And that just looks silly.
     slide: |
       # Videos Auto Play On Mobile
 
@@ -58,7 +62,9 @@ scenes:
        * Use FFMPEG to format video to different sizes
        * Use FFMPEG to extract sections
 
-  - narration: Here's a video on YouTube. It's only four minutes, but I can easily get three or four short videos out of this. I can use those to promote on Linkedin and Instagram.
+  - narration:
+       text: > Here's a video on YouTube. 
+         It's only four minutes, but I can easily re-purpose this and get three or four short videos.        
     image: youtube-linkedin-insta.png
     callout:
       type: rectangle
@@ -66,7 +72,18 @@ scenes:
       top: 265
       right: 700
       bottom: 385
+
+  - narration: I can then promote those shorter videos on Linkedin, Twitter and Instagram.
+    image: youtube-linkedin-insta.png
+    callout:
+      type: rectangle
+      left: 704
+      top: 35
+      right: 1220
+      bottom: 702
+
   - narration: First I want to download the video mp4 file. And I want to download the subtitles as an srt file.
+    image: original-download-and-subtitles.png
     slide: |
       # Download
 
@@ -74,6 +91,7 @@ scenes:
       * download subtitles from the video edit screen
 
   - narration: I'll use ffmpeg to generate a different format of subtitle file so I can burn it on to the video.
+    image: created-ass-file.png
     slide: |
       # FFMPEG Command to create a `.ass` file
 
@@ -93,14 +111,10 @@ scenes:
        subtitled-video.mp4
       ~~~~~~~~
 
+      
+
   - narration: Now I have a video with subtitles burned in, perfect for uploading to Linkedin or Twitter.
-    image: youtube-linkedin-insta.png
-    callout:
-      type: rectangle
-      left: 700
-      top: 35
-      right: 1195
-      bottom: 312
+    image: subtitled-video.png
 
   - narration: I also want to create a video sized for Instagram. I can use the scale filter from ffmpeg to do that.
     slide: |
@@ -112,27 +126,25 @@ scenes:
       pad=720:720
        instagram-sized.mp4
       ~~~~~~~~
+  
+  - narration: This video is square, but I don't have any subtitles on this yet.
+    image: instagram-sized.png
+
 
   - narration: I can burn in the subtitles for this video as well.
     slide: |
       # FFMPEG burn in subtitles to the Instagram video
 
       ~~~~~~~~
-      ffmpeg -i instaoutout.mp4 -vf 
+      ffmpeg -i instagram-sized.mp4 -vf 
       "subtitles=captions.ass:force_style=
       'OutlineColour=&H80000000,BorderStyle=4,
       Outline=1,Shadow=0,MarginV=90'"
        instagram-subs.mp4
       ~~~~~~~~
 
-  - narration: Now I have a video which is perfect for uploading to Instagram.
-    image: youtube-linkedin-insta.png
-    callout:
-      type: rectangle
-      left: 814
-      top: 313
-      right: 1210
-      bottom: 705
+  - narration: Now I have a video which is perfect for uploading to Instagram. But it is too long. I need to cut it into smaller sections.
+    image: instagram-subs.png
 
   - narration: I want to create 3 new videos from my original. I watch the video to identify which sections I need to extract. Each section starts from a point in the video and lasts for a specific length of time in seconds.
     slide: |
@@ -148,8 +160,10 @@ scenes:
       -ss 00:01:05 -t 00:00:52 instagram-01-05.mp4
       ~~~~~~~~
 
-  - narration: That was for instagram, now I'll create one for linkedin. The only difference is the input file.
-      If I repeat this for each of the segments, I'll have three videos that I can upload to Linkedin or Twitter, and three that I can upload to Instagram. All will have subtitles visible on the screen.
+  - narration: That was for instagram, and now I have a fifty two second video, with subtitles, which is the right shape and length to upload to instagram.
+    image: instagram-01-5.png
+
+  - narration:  Now I'll create one for linkedin. The only differences are the input file and output file name.      
     slide: |
 
       # Use FFMPEG to create those sections for Landscape Videos
@@ -159,8 +173,10 @@ scenes:
       -ss 00:01:05 -t 00:00:52 subtitled-01-05.mp4
       ~~~~~~~~
 
-  - narration: It seems complicated, but if you copy and paste the commands and change the filenames and timings for your sections, you could easily be using Free software to repurpose your YouTube content on Linkedin, Instagram and other social networks. And you can do this without having to do any more edits to the YouTube video or subtitles.
-    image: youtube-linkedin-insta.png
+  - narration: If I repeat this for each of the segments, I'll have three videos that I can upload to Linkedin or Twitter, and three that I can upload to Instagram. All will have subtitles visible on the screen.
+    image: subtitled-01-05.png
+
+  - narration: It seems complicated, but if you copy and paste the commands and change the filenames and timings for your sections, you could easily be using Free software to repurpose your YouTube content on Linkedin, Instagram and other social networks.
     slide: |
 
       # Benefits
@@ -170,6 +186,9 @@ scenes:
       * No need to edit the videos
       * No further need to edit the subtitles
       * Repurposed content means more value from your work
+
+  - narration:  And you can do this without having to do any more edits to the YouTube video or subtitles.
+    image: youtube-linkedin-insta.png
 
   - narration: For more Digital Marketing Tactics, Tips and tricks. Visit www.talotics.com
     slide: |
