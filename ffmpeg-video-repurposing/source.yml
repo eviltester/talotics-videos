@@ -40,6 +40,7 @@ scenes:
       # Options: CC or Burned In
 
       * Linkedin supports Closed Captions
+      * Each excerpt video would need a new subtitle file
       * Instagram needs Burned In Hard Captions
 
   - narration: I use ffmpeg to help with this. The software is free and runs from the command line. Although, that can make it seem quite complicated. You can download it from www.ffmpeg.org
