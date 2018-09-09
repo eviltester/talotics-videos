@@ -28,7 +28,7 @@ scenes:
   - narration: On mobile devices, videos auto play when shown in the feed.
     slide: Videos Auto Play On Mobile
 
-  - narration: But if you have a video with a talking head, people will see the talking head, but they won't hear the audio. And that just looks silly.
+  - narration: But if you have a video with a talking head, people will see your mouth moving, but they won't hear the audio. And that just looks silly.
     slide: |
       # Videos Auto Play On Mobile
 
@@ -42,7 +42,7 @@ scenes:
       * Linkedin supports Closed Captions
       * Instagram needs Burned In Hard Captions
 
-  - narration: I use ffmpeg to help with this. The software is free and runs from the command line. Although that can make it seem quite complicated. You can download it from www.ffmpeg.org
+  - narration: I use ffmpeg to help with this. The software is free and runs from the command line. Although, that can make it seem quite complicated. You can download it from www.ffmpeg.org
     slide: |
         # FFMPEG is free
 
@@ -62,8 +62,7 @@ scenes:
        * Use FFMPEG to format video to different sizes
        * Use FFMPEG to extract sections
 
-  - narration:
-       text: Here's a video on YouTube. It's only four minutes, but I can easily re-purpose this and get three or four short videos.        
+  - narration: Here's a video on YouTube. It's only four minutes, but I can easily re-purpose this and get three or four short videos.        
     image: youtube-linkedin-insta.png
     callout:
       type: rectangle
@@ -91,10 +90,7 @@ scenes:
       * download mp4 from the video list
       * download subtitles from the video edit screen
 
-  - narration: I'll use ffmpeg to generate a different format of subtitle file so I can burn it on to the video.
-    image:
-      file: created-ass-file.png
-      size: contain
+  - narration: I'll use ffmpeg to generate a different format of subtitle file.
     slide: |
       # FFMPEG Command to create a `.ass` file
 
@@ -102,7 +98,12 @@ scenes:
       ffmpeg -i captions.srt captions.ass
       ~~~~~~~~
 
-  - narration: I burn the subtitles on to the video like this. You might want to copy and paste from the video description. When you type it in, it all goes on one line.
+  - narration: I can use this format to burn it on to the video.
+    image:
+      file: created-ass-file.png
+      size: contain
+
+  - narration: I burn the subtitles on to the video using the subtitles filter. You might want to copy and paste from the video description. When you type it in, it all goes on one line.
     slide: |
       # FFMPEG Command to burn in subtitles
 
@@ -204,6 +205,7 @@ scenes:
     image:
       file: youtube-linkedin-insta.png
       size: contain
+    slide: No Editing Required
 
   - narration: For more Digital Marketing Tactics, Tips and tricks. Visit www.talotics.com
     slide: |
