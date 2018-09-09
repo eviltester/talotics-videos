@@ -9,7 +9,7 @@ To re-promote my YouTube videos on Linkedin, Twitter and Instagram. I want to cr
 
 Short videos work well on Instagram, and Linkedin, when people scroll through their feed.
 
-On mobile devices, videos auto play when shown in the feed.
+Videos auto play when shown in the mobile feed.
 
 But if you have a video with a talking head, people will see your mouth moving, but they won't hear the audio. And that just looks silly.
 
@@ -20,13 +20,13 @@ I use ffmpeg to help with this. The software is free and runs from the command l
 `ffmpeg` is multi-platform free software that you can download from `https://www.ffmpeg.org/`.
 
 
-Let me walk you through the workflow I use for taking a YouTube video, with subtitles, and converting it into smaller videos with burned in subtitles.
+Let me walk you through the workflow I use for taking a YouTube video, with subtitles, and converting it into smaller videos with the subtitle text burned in.
 
-Here's a video on YouTube. It's only four minutes, but I can easily re-purpose this and get three or four short videos. I can then promote those shorter videos on Linkedin, Twitter and Instagram.
+Here's a video on YouTube. It's only four minutes long, but I can easily re-purpose this and get three or four short videos. I can then promote those shorter videos on Linkedin, Twitter and Instagram.
 
-First I want to download the mp4 file.
+First I download the mp4 file.
 
-And I want to download the subtitle file as a `.srt` file.
+And I download the subtitle file in `srt` format.
 
 I'll use ffmpeg to generate a different format of subtitle file so I can burn it on to the video.
 
@@ -34,7 +34,7 @@ I'll use ffmpeg to generate a different format of subtitle file so I can burn it
 ffmpeg -i captions.srt captions.ass
 ~~~~~~~~
 
-And I'll burn it on to the video like this:
+I burn the subtitles on to the video using the subtitles filter.
 
 ~~~~~~~~
 ffmpeg -i video.mp4  -vf "subtitles=captions.ass:force_style='OutlineColour=&H80000000,BorderStyle=4,Outline=1,Shadow=0,MarginV=20'" subtitled-video.mp4
@@ -78,7 +78,7 @@ ffmpeg -i subtitled-video.mp4 -ss 00:01:05 -t 00:00:52 subtitled-01-05.mp4
 
 If I repeat that for each of the segments, I'll have three videos that I can upload to Linkedin, and three that I can upload to Instagram. All will have subtitles visible on the screen.
 
-It seems complicated, but if you copy and paste the commands and change the filenames and timings for your sections, you could easily be using Free software to repurpose your YouTube content on Linkedin, Instagram and other social networks.
+It may seem complicated, but if you copy and paste the commands and change the filenames and timings for your sections, you could easily be using Free software to repurpose your YouTube content on Linkedin, Instagram and other social networks.
 
 And you can do this without having to do any more edits to the YouTube video or subtitles.
 

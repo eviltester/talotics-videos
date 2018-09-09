@@ -51,7 +51,7 @@ scenes:
         * multi-platform: Windows, Mac, Linux, etc.
         * https://www.ffmpeg.org
 
-  - narration: Let me walk you through the workflow I use for taking a YouTube video, with subtitles, and converting it into smaller videos with the subtitles burned in.
+  - narration: Let me walk you through the workflow I use for taking a YouTube video, with subtitles, and converting it into smaller videos with the subtitle text burned in.
     slide: |
        # YouTube to Instagram Workflow
 
@@ -62,7 +62,7 @@ scenes:
        * Use FFMPEG to format video to different sizes
        * Use FFMPEG to extract sections
 
-  - narration: Here's a video on YouTube. It's only four minutes, but I can easily re-purpose this and get three or four short videos.        
+  - narration: Here's a video on YouTube. It's only four minutes long, but I can easily re-purpose this and get three or four short videos.        
     image: youtube-linkedin-insta.png
     callout:
       type: rectangle
@@ -80,7 +80,7 @@ scenes:
       right: 1220
       bottom: 702
 
-  - narration: First I want to download the video mp4 file. And I want to download the subtitles as an srt file.
+  - narration: First I download the video mp4 file. And I download the subtitles in srt format.
     image:
       file: original-download-and-subtitles.png
       size: contain
@@ -190,7 +190,7 @@ scenes:
       file: subtitled-01-05.png
       size: contain
 
-  - narration: It seems complicated, but if you copy and paste the commands and change the filenames and timings for your sections, you could easily be using Free software to repurpose your YouTube content on Linkedin, Instagram and other social networks.
+  - narration: It may seem complicated, but if you copy and paste the commands and change the filenames and timings for your sections, you could easily be using Free software to repurpose your YouTube content on Linkedin, Instagram and other social networks.
     slide: |
 
       # Benefits
