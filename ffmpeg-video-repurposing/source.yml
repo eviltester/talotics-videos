@@ -180,12 +180,12 @@ scenes:
       -ss 00:01:05 -t 00:00:52 instagram-01-05.mp4
       ```
 
-  - narration: That was for instagram, and took about 10 seconds. Now I have a fifty two second video, with subtitles, which is the right shape and length to upload to instagram.
+  - narration: That was for instagram, and took about 10 seconds to create. Now I have a fifty two second video, with subtitles, which is the right shape and length to upload to instagram.
     image:
       file: instagram-01-5.png
       size: contain
 
-  - narration:  Now I'll create one for linkedin. The only differences are the input file and output file name.      
+  - narration:  Now I'll create one for linkedin. The same ffmpeg command, with different file names.
     slide: |
 
       # Use FFMPEG to create those sections for Landscape Videos
