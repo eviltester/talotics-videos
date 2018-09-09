@@ -38,7 +38,7 @@ scenes:
       * Linkedin supports Closed Captions
       * Instagram needs Burned In Hard Captions
 
-  - narration: I use ffmpeg to help with this. The software is free and runs from the command line. Although that can make it seem quite complicated.
+  - narration: I use ffmpeg to help with this. The software is free and runs from the command line. Although that can make it seem quite complicated. You can download it from www.ffmpeg.org
     slide: |
         # FFMPEG is free
 
@@ -66,7 +66,7 @@ scenes:
       top: 265
       right: 700
       bottom: 385
-  - narration: First I want to download the mp4 file. And I want to download the subtitle file as a srt file.
+  - narration: First I want to download the video mp4 file. And I want to download the subtitles as an srt file.
     slide: |
       # Download
 
@@ -134,7 +134,7 @@ scenes:
       right: 1210
       bottom: 705
 
-  - narration: I want to create 3 new videos from my original. I watch the video to identify which sections I want. Each section starts from a point in the video and lasts for a specific length of time in seconds.
+  - narration: I want to create 3 new videos from my original. I watch the video to identify which sections I need to extract. Each section starts from a point in the video and lasts for a specific length of time in seconds.
     slide: |
 
       # Use FFMPEG to create those sections for Instagram
@@ -149,7 +149,7 @@ scenes:
       ~~~~~~~~
 
   - narration: That was for instagram, now I'll create one for linkedin. The only difference is the input file.
-      If I repeat this for each of the segments, I'll have three videos that I can upload to Linkedin, and three that I can upload to Instagram. All will have subtitles visible on the screen.
+      If I repeat this for each of the segments, I'll have three videos that I can upload to Linkedin or Twitter, and three that I can upload to Instagram. All will have subtitles visible on the screen.
     slide: |
 
       # Use FFMPEG to create those sections for Landscape Videos
@@ -159,7 +159,7 @@ scenes:
       -ss 00:01:05 -t 00:00:52 subtitled-01-05.mp4
       ~~~~~~~~
 
-  - narration: It seems complicated, but if you copy and paste the commands and replace the filenames with the files you're working with, then edit the timings for your sections, you could easily be repurposing your YouTube content on Linkedin, Instagram and other social networks. Using Free software and without having to do any more edits to the YouTube video or subtitles.
+  - narration: It seems complicated, but if you copy and paste the commands and change the filenames and timings for your sections, you could easily be using Free softwarere to repurpose your YouTube content on Linkedin, Instagram and other social networks. And you can do this without having to do any more edits to the YouTube video or subtitles.
     image: youtube-linkedin-insta.png
     slide: |
 
