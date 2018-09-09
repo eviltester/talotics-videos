@@ -200,6 +200,9 @@ scenes:
       size: contain
 
   - narration: It may seem complicated, but if you copy and paste the commands and change the filenames and timings for your sections, you could easily be using Free software to repurpose your YouTube content on Linkedin, Instagram and other social networks.
+    image:
+       file: greenGreyWords-500x500.png
+       size: contain     
     slide: |
 
       # Benefits
@@ -217,6 +220,7 @@ scenes:
     slide: No Editing Required
 
   - narration: For more Digital Marketing Tactics, Tips and tricks. Visit www.talotics.com
-    slide: |
-
-      # Visit www.talotics.com
+    image:
+      file: greenGreyWords-500x500.png
+      size: contain     
+    slide: Visit www.talotics.com
