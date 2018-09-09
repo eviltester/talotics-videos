@@ -33,11 +33,12 @@ scenes:
     slide: Videos Auto Play On Mobile
 
   - narration: But if you have a video with a talking head, people will see your mouth moving, but they won't hear the audio. And that just looks silly.
-    slide: |
-      # Videos Auto Play On Mobile
-
-      * Audio is off by default
-      * Talking heads, with no sound, look silly
+    video: talking-head.mp4
+#    slide: |
+#      # Videos Auto Play On Mobile
+#
+#      * Audio is off by default
+#      * Talking heads, with no sound, look silly
 
   - narration: I could upload a subtitle file to Linkedin, but I'd have to edit that for each excerpt. Or, I can use hard captions, "burned in", to the video to avoid that problem.
     slide: |
@@ -199,12 +200,8 @@ scenes:
       file: subtitled-01-05.png
       size: contain
 
-  - narration: It may seem complicated, but if you copy and paste the commands and change the filenames and timings for your sections, you could easily be using Free software to repurpose your YouTube content on Linkedin, Instagram and other social networks.
-    image:
-       file: greenGreyWords-500x500.png
-       size: contain     
+  - narration: It may seem complicated, but if you copy and paste the commands and change the filenames and timings for your sections, you could easily be using Free software to repurpose your YouTube content on Linkedin, Instagram and other social networks.  
     slide: |
-
       # Benefits
 
       * Free Software
@@ -213,14 +210,13 @@ scenes:
       * No further need to edit the subtitles
       * Repurposed content means more value from your work
 
-  - narration:  And you can do this without having to do any more edits to the YouTube video or subtitles.
+  - narration: And you can do all of this without having to do any more edits to the YouTube video or subtitles.
     image:
       file: youtube-linkedin-insta.png
       size: contain
     slide: No Editing Required
 
   - narration: For more Digital Marketing Tactics, Tips and tricks. Visit www.talotics.com
-    image:
-      file: greenGreyWords-500x500.png
-      size: contain     
     slide: Visit www.talotics.com
+  - image: greenGreyWords-500x500.png
+    duration: 2
