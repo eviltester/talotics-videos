@@ -89,14 +89,15 @@ scenes:
     video: download-youtube.mp4
 
   - narration: And I download the subtitles in srt format.
-    image:
-      file: original-download-and-subtitles.png
-      size: contain
-    slide: |
+    video: download-srt.mp4
+#    image:
+#      file: original-download-and-subtitles.png
+#      size: contain
+#    slide: |
       # Download
-
-      * download mp4 from the video list
-      * download subtitles from the video edit screen
+#
+#      * download mp4 from the video list
+#      * download subtitles from the video edit screen
 
   - narration: I'll use ffmpeg to generate a different format of subtitle file.
     slide: |
@@ -106,12 +107,12 @@ scenes:
       ffmpeg -i captions.srt captions.ass
       ```
 
-  - narration: I can use this format to burn it on to the video.
+  - narration: I can burn this format on to the video.
     image:
       file: created-ass-file.png
       size: contain
 
-  - narration: I burn the subtitles on to the video using the subtitles filter. You might want to copy and paste from the video description. When you type it in, it all goes on one line.
+  - narration: I use the ffmpeg subtitles filter to burn these in. You might want to copy and paste from the video description. When you type it in, it all goes on one line.
     slide: |
       # FFMPEG Command to burn in subtitles
 
@@ -125,12 +126,12 @@ scenes:
 
       
 
-  - narration: Now I have a video with subtitles burned in, perfect for uploading to Linkedin or Twitter.
+  - narration: Now the video has hard subtitles. Perfect for uploading to Linkedin or Twitter.
     image:
       file: subtitled-video.png
       size: contain
 
-  - narration: I also want to create a video sized for Instagram. I can use the scale filter from ffmpeg to do that.
+  - narration: I also want to create a video sized for Instagram. I use the ffmpeg scale filter to do that.
     slide: |
       # FFMPEG `scale` to format for Instagram
 

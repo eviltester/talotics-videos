@@ -5,7 +5,9 @@ git-location: https://github.com/eviltester/talotics-videos.git
 source-path: ffmpeg-video-repurposing/source.yml
 -->
 
-To re-promote my YouTube videos on Linkedin, Twitter and Instagram. I want to create smaller excerpts of my YouTube videos and have these send traffic to the main video on YouTube.
+I want to create smaller excerpts of my YouTube videos. I will upload these small videos to Linkedin, Twitter and Instagram. And they will drive traffic to the main video on YouTube.
+
+And I want to do that without any extra video editing.
 
 Short videos work well on Instagram, and Linkedin, when people scroll through their feed.
 
@@ -68,7 +70,7 @@ I can use ffmpeg to create those sections.
 ffmpeg -i instagram-subs.mp4 -ss 00:01:05 -t 00:00:52 instagram-01-05.mp4
 ~~~~~~~~
 
-That was for instagram, and now I have a fifty two second video, with subtitles, which is the right shape and length to upload to instagram.
+That was for instagram, and took about 10 seconds. Now I have a fifty two second video, with subtitles, which is the right shape and length to upload to instagram.
 
 Now I'll create one for linkedin. The only differences are the input file and output file name.
 
