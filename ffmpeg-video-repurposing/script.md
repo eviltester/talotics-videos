@@ -1,5 +1,10 @@
 # Repurposing YouTube content for Linkedin and Instagram
 
+<!-- META DATA
+git-location: https://github.com/eviltester/talotics-videos.git
+source-path: ffmpeg-video-repurposing/source.yml
+-->
+
 To re-promote my YouTube videos on Linkedin, Twitter and Instagram. I want to create smaller excerpts of my YouTube videos and have these send traffic to the main video on YouTube.
 
 Short videos work well on Instagram, and Linkedin, when people scroll through their feed.

@@ -63,8 +63,7 @@ scenes:
        * Use FFMPEG to extract sections
 
   - narration:
-       text: > Here's a video on YouTube. 
-         It's only four minutes, but I can easily re-purpose this and get three or four short videos.        
+       text: Here's a video on YouTube. It's only four minutes, but I can easily re-purpose this and get three or four short videos.        
     image: youtube-linkedin-insta.png
     callout:
       type: rectangle
