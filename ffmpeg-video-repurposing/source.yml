@@ -94,9 +94,9 @@ scenes:
     slide: |
       # FFMPEG Command to create a `.ass` file
 
-      ~~~~~~~~
+      ```console
       ffmpeg -i captions.srt captions.ass
-      ~~~~~~~~
+      ```
 
   - narration: I can use this format to burn it on to the video.
     image:
@@ -107,13 +107,13 @@ scenes:
     slide: |
       # FFMPEG Command to burn in subtitles
 
-      ~~~~~~~~
+      ```console
       ffmpeg -i video.mp4  
       -vf "subtitles=captions.ass:
       force_style='OutlineColour=&H80000000,BorderStyle=4,
       Outline=1,Shadow=0,MarginV=20'"
        subtitled-video.mp4
-      ~~~~~~~~
+      ```
 
       
 
@@ -126,12 +126,12 @@ scenes:
     slide: |
       # FFMPEG `scale` to format for Instagram
 
-      ~~~~~~~~
+      ```console
       ffmpeg -i video.mp4 -vf 
       scale=720:720:force_original_aspect_ratio=decrease,
       pad=720:720
        instagram-sized.mp4
-      ~~~~~~~~
+      ```
   
   - narration: This video is square, but I don't have any subtitles on this yet.
     image:
@@ -143,13 +143,13 @@ scenes:
     slide: |
       # FFMPEG burn in subtitles to the Instagram video
 
-      ~~~~~~~~
+      ```console
       ffmpeg -i instagram-sized.mp4 -vf 
       "subtitles=captions.ass:force_style=
       'OutlineColour=&H80000000,BorderStyle=4,
       Outline=1,Shadow=0,MarginV=90'"
        instagram-subs.mp4
-      ~~~~~~~~
+      ```
 
   - narration: Now I have a video which is perfect for uploading to Instagram. But it is too long. I need to cut it into smaller sections.
     image:
@@ -165,10 +165,10 @@ scenes:
       * from 02:00 for 33 seconds
       * from 03:10 for 51 seconds
 
-      ~~~~~~~~
+      ```console
       ffmpeg -i instagram-subs.mp4 
       -ss 00:01:05 -t 00:00:52 instagram-01-05.mp4
-      ~~~~~~~~
+      ```
 
   - narration: That was for instagram, and now I have a fifty two second video, with subtitles, which is the right shape and length to upload to instagram.
     image:
@@ -180,10 +180,10 @@ scenes:
 
       # Use FFMPEG to create those sections for Landscape Videos
 
-      ~~~~~~~~
+      ```console
       ffmpeg -i subtitled-video.mp4
       -ss 00:01:05 -t 00:00:52 subtitled-01-05.mp4
-      ~~~~~~~~
+      ```
 
   - narration: If I repeat this for each of the segments, I'll have three videos that I can upload to Linkedin or Twitter, and three that I can upload to Instagram. All will have subtitles visible on the screen.
     image:
