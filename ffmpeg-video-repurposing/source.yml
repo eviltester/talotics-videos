@@ -1,7 +1,7 @@
 size: 720p
 resourceDir: resources
 scenes:
-  - narration: In this video I will show you hot I create smaller excerpts of my YouTube videos which I can upload to Linkedin, Twitter and Instagram. And they will drive traffic to the main video on YouTube.
+  - narration: In this video I will show you how I create smaller excerpts of my YouTube videos, which I can upload to Linkedin, Twitter and Instagram. And they will drive traffic to the main video on YouTube.
     image: youtube-linkedin-insta.png
     slide: Repurpose YouTube videos for re-promotion
 #    slide: |
@@ -33,7 +33,9 @@ scenes:
     slide: Videos Auto Play On Mobile
 
   - narration: But if you have a video with a talking head, people will see your mouth moving, but they won't hear the audio. And that just looks silly.
-    video: talking-head.mp4
+    video:
+      file: talking-head.mp4
+      segment: 00:00 - 00:10
 #    slide: |
 #      # Videos Auto Play On Mobile
 #
@@ -87,10 +89,14 @@ scenes:
       bottom: 702
 
   - narration: First I download the video mp4 file.
-    video: download-youtube.mp4
+    video:
+      file: download-youtube.mp4
+      segment: 00:03 - 00:08
 
   - narration: And I download the subtitles in srt format.
-    video: download-srt.mp4
+    video:
+      file: download-srt.mp4
+      segment: 00:03 - 00:11
 #    image:
 #      file: original-download-and-subtitles.png
 #      size: contain
