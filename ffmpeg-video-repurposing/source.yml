@@ -1,7 +1,7 @@
 size: 720p
 resourceDir: resources
 scenes:
-  - narration: I want to create smaller excerpts of my YouTube videos. I will upload these small videos to Linkedin, Twitter and Instagram. And they will drive traffic to the main video on YouTube.
+  - narration: In this video I will show you hot I create smaller excerpts of my YouTube videos which I can upload to Linkedin, Twitter and Instagram. And they will drive traffic to the main video on YouTube.
     image: youtube-linkedin-insta.png
     slide: Repurpose YouTube videos for re-promotion
 #    slide: |
@@ -10,9 +10,9 @@ scenes:
 #      * create smaller excerpts
 #      * link them to YouTube
 
-  - narration: And I want to do that without any extra video editing.
+  - narration: And I do that without any extra video editing.
     image: youtube-linkedin-insta.png
-    slide: And I want to do that without any extra video editing.
+    slide: Without any extra video editing.
 
   - narration: Short videos work well on Instagram, and Linkedin, when people scroll through their feed.
     image: youtube-linkedin-insta.png
