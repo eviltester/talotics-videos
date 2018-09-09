@@ -13,7 +13,7 @@ On mobile devices, videos auto play when shown in the feed.
 
 But if you have a video with a talking head, people will see the talking head, but they won't hear the audio. And that just looks silly.
 
-I could upload a subtitle file to Linkedin, but I'd have to edit that for the excerpt. Or, I can use hard captions, "burned in", to the video to avoid that problem.
+I could upload a subtitle file to Linkedin, but I'd have to edit that for each excerpt. Or, I can use hard captions, "burned in", to the video to avoid that problem.
 
 I use ffmpeg to help with this. The software is free and runs from the command line. Although that can make it seem quite complicated.
 
