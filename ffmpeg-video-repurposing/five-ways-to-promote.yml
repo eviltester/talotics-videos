@@ -12,7 +12,7 @@ scenes:
     image: social-quotes.png
 
   - narration: Burn the subtitles into the video and split and scale the video for different sizes to use on social media sites.
-     image:
+    image:
       file: burn-in-resize.png
       size: contain
     slide: |
@@ -25,7 +25,7 @@ scenes:
     image: igtv-captions.png
 
   - narration: Download the .srt as text and format into blog posts or ebooks. You could sell these or use them as lead magnets.
-     image:
+    image:
       file: srt-to-text.png
       size: contain
     slide: |
