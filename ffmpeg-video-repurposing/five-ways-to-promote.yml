@@ -12,7 +12,9 @@ scenes:
     image: social-quotes.png
 
   - narration: Burn the subtitles into the video and split and scale the video for different sizes to use on social media sites.
-    image: burn-in-resize.png
+     image:
+      file: burn-in-resize.png
+      size: contain
     slide: |
       - Instagram
       - Facebook
@@ -23,21 +25,23 @@ scenes:
     image: igtv-captions.png
 
   - narration: Download the .srt as text and format into blog posts or ebooks. You could sell these or use them as lead magnets.
-    image: srt-to-text.png
+     image:
+      file: srt-to-text.png
+      size: contain
     slide: |
       # Download the .srt as text and reformat
 
       - use these as lead magnets
       - or convert into ebooks or paperbacks for sale
 
-  - narration: And you can do all of this without having to do any more edits to the YouTube video or subtitles.
+  - narration: How do you promote your videos? Leave a comment and let me know.
     image:
       file: top-5-promo-tactics.png
       size: contain
     slide: |
-    # How do you promote your videos?
-
-    ## Leave a comment and let me know.
+      # How do you promote your videos?
+      
+      ## Leave a comment and let me know.
 
   - narration: For more Digital Marketing Tactics, Tips and tricks. Visit www.talotics.com
     slide: Visit www.talotics.com
