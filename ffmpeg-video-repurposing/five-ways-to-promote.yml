@@ -1,0 +1,46 @@
+size: 720p
+resourceDir: resources
+scenes:
+  - narration: Here are our Top 5 ways to promote your videos, (if you have subtitles)
+    image: top-5-promo-tactics.png
+    slide: Top 5 ways to promote your videos (if you have subtitles)
+
+  - narration: Add the subtitles to the full video you uploaded to YouTube and Facebook to increase SEO.
+    image: better-seo.png
+
+  - narration: Pull out quotes from the transcription to convert into images for Twitter, Instagram, and promote your full video on YouTube.
+    image: social-quotes.png
+
+  - narration: Burn the subtitles into the video and split and scale the video for different sizes to use on social media sites.
+    image: burn-in-resize.png
+    slide: |
+      - Instagram
+      - Facebook
+      - LinkedIn
+      - Twitter
+
+  - narration: Burn the subtitles into the video and split into smaller chunks for IGTV. Remember IGTV allows ten minutes of video.
+    image: igtv-captions.png
+
+  - narration: Download the .srt as text and format into blog posts or ebooks. You could sell these or use them as lead magnets.
+    image: srt-to-text.png
+    slide: |
+      # Download the .srt as text and reformat
+
+      - use these as lead magnets
+      - or convert into ebooks or paperbacks for sale
+
+  - narration: And you can do all of this without having to do any more edits to the YouTube video or subtitles.
+    image:
+      file: top-5-promo-tactics.png
+      size: contain
+    slide: |
+    # How do you promote your videos?
+
+    ## Leave a comment and let me know.
+
+  - narration: For more Digital Marketing Tactics, Tips and tricks. Visit www.talotics.com
+    slide: Visit www.talotics.com
+
+  - image: greenGreyWords-500x500.png
+    duration: 2
