@@ -1,0 +1,15 @@
+size: 720p
+resourceDir: resources
+scenes:
+
+
+  - narration: Number Five. Download the .srt as text and format into blog posts or ebooks. You could sell these or use them as lead magnets.
+    image:
+      file: srt-to-text.png
+      size: contain
+    slide: |
+      # Download the .srt as text and reformat
+
+      - use these as lead magnets
+      - or convert into ebooks or paperbacks for sale
+
